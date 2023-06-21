@@ -11,7 +11,7 @@ return jsonFromCache;
 //Requete pour faire remonté données d'un produit spécifique
 
 async function getProductFromAPI(id){
-let res = await fetch ("https://back-projet5-open-classrooms-jsc50k7vn-orionthedev.vercel.app/api/products" + id);
+let res = await fetch ("https://back-projet5-open-classrooms-jsc50k7vn-orionthedev.vercel.app/api/products/" + id);
 return await res.json();
 };
 
